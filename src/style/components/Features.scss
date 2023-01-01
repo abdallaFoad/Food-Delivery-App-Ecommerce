@@ -1,0 +1,20 @@
+@import "../config.scss";
+
+.features {
+  padding: 3rem 0;
+  .feature__subtitle {
+    color: $color-df2020;
+  }
+  .feature__title span {
+    color: $color-df2020;
+  }
+  .feature__text {
+    color: $color-777;
+  }
+
+  .feature__item {
+    p {
+      color: $color-777;
+    }
+  }
+}

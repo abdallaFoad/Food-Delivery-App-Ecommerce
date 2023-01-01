@@ -1,0 +1,14 @@
+@import '../../config.scss';
+
+.review__text {
+  color: $color-777;
+  line-height: 30px;
+  margin: 40px 0px;
+}
+
+.slider__content img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+}

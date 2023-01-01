@@ -1,0 +1,23 @@
+@import '../config.scss';
+
+.main-testimonials {
+  min-height: 90vh !important;
+  padding:3rem 0;
+  .container {
+    // min-height: 90vh !important;
+    .row {
+      height: fit-content;
+      // min-height: 90vh !important;
+      .testimonial__subtitle {
+        font-size: 1.7rem;
+        font-weight: bold;
+      }
+      .testimonial__title span{
+        color:$color-df2020;
+      }
+      .testimonial__desc {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

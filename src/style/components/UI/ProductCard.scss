@@ -1,0 +1,53 @@
+@import "../../config.scss";
+
+.product__item {
+  border: 1px solid $color-fde4e4;
+  text-align: center;
+  padding: 30px;
+  cursor: pointer;
+  min-height: 300px;
+  .product__img {
+    margin-bottom: 20px;
+    transition: 0.4s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  .product__content {
+    h5 {
+      margin-bottom: 30px;
+      min-height: 48px;
+      a {
+        color: $color-212245;
+        font-size: 1rem;
+      }
+    }
+    .product__price {
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: $color-df2020;
+    }
+    .addTOCart__btn {
+      border: none;
+      padding: 7px;
+      background: $color-df2020;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      transition: $transition;
+      &:hover {
+        background-color: $color-212245;
+      }
+    }
+  }
+}
+
+@media (min-width: 538px) and (max-width: 1024px) {
+  .product__item {
+    .product__content {
+      .addTOCart__btn {
+        padding: 4px;
+      }
+    }
+  }
+}

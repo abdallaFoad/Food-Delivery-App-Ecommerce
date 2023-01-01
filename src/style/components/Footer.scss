@@ -1,0 +1,110 @@
+@import "../config.scss";
+
+.footer {
+  padding: 5rem 0;
+  background-color: $color-fde4e4;
+  .container {
+    .footer-title {
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 15px;
+
+      font-size: 1.1rem;
+      color: #212245;
+      font-weight: 600;
+    }
+
+    .footer__logo {
+      display: flex;
+      flex-direction: column;
+      img {
+        width: calc(100% - 80%);
+        margin-bottom: 5px;
+      }
+      p {
+        font-size: 0.9rem;
+        color: $color-333;
+      }
+    }
+    .deliver__time-list {
+      border-radius: 0;
+      .delivery__time-item {
+        background-color: transparent !important;
+        span {
+          font-weight: 700;
+          font-size: 1rem;
+          color: #212245;
+        }
+        p {
+          color: $color-212245;
+        }
+      }
+    }
+    .newsletter {
+      overflow: hidden;
+      p {
+        padding-top: 8px;
+      }
+      .newsletter-input {
+        margin-top: 2rem;
+        border: 1px solid $color-212245;
+        border-radius: 4px;
+        padding: 0.2rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        input {
+          outline: none;
+          border: 0;
+          padding: 0 0.2rem;
+          background-color: transparent;
+          width: 80%;
+          &::placeholder {
+            color: $color-212245;
+          }
+        }
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          width: 20%;
+          background-color: $color-df2020;
+          border-radius: 0.4rem;
+          padding: 0.2rem 0;
+          svg {
+            font-size: 1.2rem;
+            color: white;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .bottom-footer {
+      .copyright__text {
+        color: $color-212245;
+        font-size: .9rem;
+      }
+      .social__links {
+        a {
+          padding: 5px;
+          width:25px;
+          height:25px;
+          background: $color-df2020;
+          border-radius: 50%;
+          display:flex;
+          align-items: center;
+          justify-content: center;
+          &:hover{
+            background-color:$color-212245;
+          }
+          svg {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

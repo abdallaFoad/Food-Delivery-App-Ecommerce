@@ -1,0 +1,22 @@
+@import "../config.scss";
+
+.why-chooseUs {
+  .tasty__treat-title span {
+    color:$color-df2020;
+  }
+  .tasty__treat-desc {
+    color: $color-777;
+    line-height: 28px;
+  }
+  .choose__us-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    svg {
+      font-weight: 500 !important;
+      color: $color-df2020;
+    }
+  }
+  .choose__us-desc {
+    color: $color-777;
+  }
+}

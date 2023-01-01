@@ -1,0 +1,29 @@
+@import "../config.scss";
+
+.tabs-section {
+  padding:3rem 0;
+  .food__category {
+    background: $color-df2020;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 0px;
+    border-radius: 8px;
+    button {
+      border: none;
+      outline: none;
+      padding: 7px;
+      background: transparent;
+      color: #fff;
+      transition: $transition;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .foodBtnActive {
+      background: #fff !important;
+      border-radius: 5px;
+      color: $color-df2020 !important;
+    }
+  }
+}
