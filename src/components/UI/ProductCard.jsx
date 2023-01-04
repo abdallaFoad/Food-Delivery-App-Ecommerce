@@ -12,7 +12,7 @@ const ProductCard = (props) => {
   const dispatch = useDispatch();
 
   const addToCart = () => {
-    dispatch(addItem({id, image01, title, price}))
+    dispatch(addItem({ id, image01, title, price }));
   }
   return (
     <div className="product__item">

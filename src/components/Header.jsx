@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useDebugValue, useEffect, useState } from "react";
 import "alias-style/components/Header.scss";
 
 import { Container } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
-import { useSelector} from 'react-redux';
+import { useSelector, useDispatch} from 'react-redux';
 
 import { RiShoppingBasketLine } from "react-icons/ri";
 import { AiOutlineUser } from "react-icons/ai";
@@ -11,6 +11,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 import logoImg from "alias-images/res-logo.png";
 import { useRef } from "react";
+import { cartUiAction } from "../store/shopping-cart/CartUiSlice";
 
 const Header = () => {
 
@@ -39,7 +40,11 @@ const Header = () => {
   const borderRef = useRef(null);
   const [show, setShow] = useState(false);
   const toggleState = () => setShow(!show);
+  const dispatch = useDispatch();
 
+  const toggleCart = () => {
+    dispatch(cartUiAction.toggle());
+  }
   useEffect(() => {
     window.addEventListener("scroll", () => {
       document.documentElement.scrollTop > 80
@@ -87,7 +92,7 @@ const Header = () => {
 
         {/*==== Nav Right Icons ==== */}
         <div className="right-menu">
-          <div className="cart-icon">
+          <div className="cart-icon" onClick={toggleCart}>
             <div className="icon">{<RiShoppingBasketLine />}</div>
             <div className="num">{totalQuantity}</div>
           </div>
