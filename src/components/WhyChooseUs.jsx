@@ -4,7 +4,7 @@ import React from "react";
 import { Col, Container, ListGroup, ListGroupItem, Row } from "react-bootstrap";
 import { AiOutlineCheckCircle } from 'react-icons/ai';
 
-import whyImg from "alias-images/location.png";
+import whyImg from "../assets/images/location.png";
 
 
 

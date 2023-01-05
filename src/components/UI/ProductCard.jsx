@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-
-import "alias-style/components/UI/ProductCard.scss";
-import formatCurrency from "../../FormatCurrency/FormatCurrency";
 import { useDispatch } from "react-redux";
+
+import "../../style/components/UI/ProductCard.scss";
+import formatCurrency from "../../FormatCurrency/FormatCurrency";
 import { addItem } from "../../store/shopping-cart/cartSlice";
 
 

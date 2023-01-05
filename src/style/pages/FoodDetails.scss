@@ -1,0 +1,68 @@
+@import "../config.scss";
+
+.food-details {
+  .container {
+    padding: 3rem 0;
+    .product__images {
+      .img__item {
+        cursor: pointer;
+      }
+    }
+    .single__product-content {
+      padding-left: 50px;
+      .product__price {
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+        margin-bottom: 0;
+        span {
+          font-size: 2rem;
+        }
+      }
+      .category {
+        font-weight: 600;
+        color: $color-212245;
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+        margin-top: 10px;
+        span {
+          padding: 5px 10px;
+          background: $color-fde4e4;
+          color: $color-212245;
+          border-radius: 5px;
+        }
+      }
+      .addTOCart__btn {
+        @extend %main-btn;
+      }
+    }
+  }
+}
+
+@media (max-width: 538px) {
+  .food-details {
+    .container {
+      .related__Product-title {
+        text-align: center;
+      }
+      .text-white{
+        text-align: center;
+      }
+      .single__product-content{
+        column-gap: 0;
+        justify-content: center;
+        margin: 2rem 0;
+        padding-left: 0 !important;
+        width:100%;
+        text-align: center;
+        .category{
+          justify-content: center;
+        }
+        .product__price{
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

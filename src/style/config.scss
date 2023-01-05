@@ -1,6 +1,19 @@
 $color-212245: #212245;
 $color-df2020: #df2020;
-$color-fde4e4:#fde4e4;
-$color-333:#333;
-$color-777:#777;
-$transition: all .4s; 
+$color-fde4e4: #fde4e4;
+$color-333: #333;
+$color-777: #777;
+$color-212245b6: #212245b6;
+$transition: all 0.4s;
+%main-btn {
+  border: none;
+  padding: 7px;
+  background: $color-df2020;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: $transition;
+  &:hover {
+    background-color: $color-212245;
+  }
+}

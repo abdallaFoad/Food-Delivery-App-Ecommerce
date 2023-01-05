@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import { Container } from "reactstrap";
+import "../../style/components/UI/CommonSection.scss";
 
-const CommonSection = () => {
+const CommonSection = ({title}) => {
   return (
-    <div>CommonSection</div>
-  )
-}
+    <section className="common__section">
+      <Container>
+        <h2 className="text-white">{title}</h2>
+      </Container>
+    </section>
+  );
+};
 
-export default CommonSection
+export default CommonSection;

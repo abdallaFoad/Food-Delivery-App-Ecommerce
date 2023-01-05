@@ -1,5 +1,5 @@
-import React, { useDebugValue, useEffect, useState } from "react";
-import "alias-style/components/Header.scss";
+import React, { useEffect, useState } from "react";
+import "../style/components/Header.scss";
 
 import { Container } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
@@ -9,7 +9,7 @@ import { RiShoppingBasketLine } from "react-icons/ri";
 import { AiOutlineUser } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-import logoImg from "alias-images/res-logo.png";
+import logoImg from "../assets/images/res-logo.png";
 import { useRef } from "react";
 import { cartUiAction } from "../store/shopping-cart/CartUiSlice";
 
@@ -36,6 +36,7 @@ const Header = () => {
     },
   ];
 
+  
   const menuRef = useRef(null);
   const borderRef = useRef(null);
   const [show, setShow] = useState(false);
@@ -45,6 +46,10 @@ const Header = () => {
   const toggleCart = () => {
     dispatch(cartUiAction.toggle());
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [menuRef]);
   useEffect(() => {
     window.addEventListener("scroll", () => {
       document.documentElement.scrollTop > 80

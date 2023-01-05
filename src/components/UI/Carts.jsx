@@ -8,7 +8,7 @@ import { AiOutlineClose } from "react-icons/ai";
 
 
 import CartItem from "./CartItem";
-import "alias-style/components/UI/Carts.scss";
+import "../../style/components/UI/Carts.scss";
 import { cartUiAction } from "../../store/shopping-cart/CartUiSlice";
 import formatCurrency from "../../FormatCurrency/FormatCurrency";
 

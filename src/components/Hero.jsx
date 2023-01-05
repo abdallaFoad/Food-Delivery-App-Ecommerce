@@ -1,4 +1,4 @@
-import "alias-style/components/Hero.scss";
+import "../style/components/Hero.scss";
 
 import React from 'react';
 import { Row, Col, Container} from 'react-bootstrap';
@@ -7,7 +7,7 @@ import { MdKeyboardArrowRight } from 'react-icons/md';
 import { RiCarLine } from "react-icons/ri";
 import { BsShieldCheck } from "react-icons/bs";
 
-import heroImg from "alias-images/hero.png";
+import heroImg from "../assets/images/hero.png";
 
 const Hero = () => {
   return (

@@ -6,7 +6,7 @@ import { GrFormSubtract } from 'react-icons/gr';
 import { GrClose } from 'react-icons/gr';
 import { MdAdd } from "react-icons/md";
 
-import "alias-style/components/UI/CartItem.scss";
+import "../../style/components/UI/CartItem.scss";
 
 import {
   addItem,

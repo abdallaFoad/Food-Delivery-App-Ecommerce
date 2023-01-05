@@ -1,11 +1,11 @@
 import React from "react";
 import Slider from "react-slick";
 
-import ava01 from "alias-images/ava-1.jpg";
-import ava02 from "alias-images/ava-2.jpg";
-import ava03 from "alias-images/ava-3.jpg";
+import ava01 from "../../assets/images/ava-1.jpg";
+import ava02 from "../../assets/images/ava-2.jpg";
+import ava03 from "../../assets/images/ava-3.jpg";
 
-import "alias-style/components/UI/TestimonialSlider.scss";
+import "../../style/components/UI/TestimonialSlider.scss";
 
 const settings = {
   dots: true,

@@ -1,0 +1,28 @@
+@import "../config.scss";
+
+.arrow {
+  position: fixed;
+  bottom: 1.5rem;
+  background-color: $color-212245;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: $transition;
+  &:hover {
+    background-color: $color-df2020;
+  }
+  svg {
+    color: white;
+    font-size: 1.2rem;
+  }
+}
+.come {
+  right: 1.5rem;
+}
+.go {
+  right: -500px;
+}

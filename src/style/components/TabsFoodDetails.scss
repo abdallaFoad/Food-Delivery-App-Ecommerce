@@ -1,0 +1,84 @@
+@import "../config.scss";
+
+.tabs_food-details {
+  .tab__active {
+    color: $color-df2020;
+  }
+  .tabs {
+    border-bottom: 1px solid $color-fde4e4;
+    h6 {
+      cursor: pointer;
+      transition: $transition;
+    }
+  }
+  .tab__content {
+    padding: 30px 0px;
+    transition: $transition;
+    p {
+      line-height: 30px;
+      color: $color-212245b6;
+    }
+  }
+  .tab__form {
+    transition: $transition;
+    .user__name {
+      font-weight: 600;
+      color: $color-212245;
+    }
+    .user__email {
+      font-size: 0.8rem;
+    }
+    .feedback__text {
+      color: $color-212245b6;
+    }
+
+    .img__item {
+      cursor: pointer;
+    }
+    .related__Product-title {
+      font-size: 1.4rem;
+    }
+    .form {
+      width: 60%;
+      margin: auto;
+      background: $color-fde4e4;
+      padding: 20px;
+      border-radius: 5px;
+      .form__group {
+        margin-bottom: 30px;
+        input,
+        textarea {
+          width: 100%;
+          background: transparent;
+          padding: 7px 20px;
+          border: none;
+          border-bottom: 1px solid $color-212245b6;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+      .addTOCart__btn {
+        @extend %main-btn;
+      }
+    }
+  }
+}
+
+@media (max-width: 538px) {
+  .tabs_food-details {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    .tabs {
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .tab__form .form {
+      margin-top: 2rem;
+    }
+    .tab__form .form {
+      width: 100%;
+    }
+  }
+}

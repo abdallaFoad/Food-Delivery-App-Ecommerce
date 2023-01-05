@@ -1,11 +1,11 @@
-import "alias-style/components/Tabs.scss";
+import "../style/components/Tabs.scss";
 
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-import foodCategoryImg01 from "alias-images/hamburger.png";
-import foodCategoryImg02 from "alias-images/pizza.png";
-import foodCategoryImg03 from "alias-images/bread.png";
+import foodCategoryImg01 from "../assets/images/hamburger.png";
+import foodCategoryImg02 from "../assets/images/pizza.png";
+import foodCategoryImg03 from "../assets/images/bread.png";
 
 import products from "../assets/fake-data/products";
 import ProductCard from "./UI/ProductCard";

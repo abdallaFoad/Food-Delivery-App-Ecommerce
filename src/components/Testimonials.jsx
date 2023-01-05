@@ -2,11 +2,11 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
 
-import networkImg from "alias-images/network.png";
+import networkImg from "../assets/images/network.png";
 
 import TestimonialSlider from "./UI/TestimonialSlider";
 
-import "alias-style/components/Testimonials.scss";
+import "../style/components/Testimonials.scss";
 
 const Testimonials = () => {
   return (

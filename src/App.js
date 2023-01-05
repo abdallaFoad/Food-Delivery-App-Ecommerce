@@ -10,10 +10,12 @@ import Checkout from "./pages/Checkout";
 import Home from './pages/Home';
 import Cart from './pages/Cart';
 import Layout from './components/Layout';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <div className="App">
+      <ScrollToTop />
       <Routes>
         <Route to="/" element={<Layout />}>
           <Route index element={<Home />} />

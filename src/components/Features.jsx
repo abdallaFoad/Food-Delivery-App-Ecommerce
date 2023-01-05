@@ -1,11 +1,11 @@
-import "alias-style/components/Features.scss";
+import "../style/components/Features.scss";
 
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
-import featureImg01 from "alias-images/service-01.png";
-import featureImg02 from "alias-images/service-02.png";
-import featureImg03 from "alias-images/service-03.png";
+import featureImg01 from "../assets/images/service-01.png";
+import featureImg02 from "../assets/images/service-02.png";
+import featureImg03 from "../assets/images/service-03.png";
 import { Fade } from "react-reveal";
 
 const featureData = [

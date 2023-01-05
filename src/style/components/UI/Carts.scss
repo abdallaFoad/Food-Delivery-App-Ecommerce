@@ -13,7 +13,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 400px;
+    width: 40%;
     height: 100%;
     background: #fff;
     z-index: 9999999999999;
@@ -69,6 +69,28 @@
           font-weight: 600;
         }
       }
+    }
+  }
+}
+
+@media (min-width:768px) and (max-width:1440px){
+  .cart__container{
+    .cart{
+      width:400px;
+    }
+  }
+}
+@media (min-width:539px) and (max-width:1024px){
+  .cart__container{
+    .cart{
+      width:300px;
+    }
+  }
+}
+@media (max-width:538px){
+  .cart__container{
+    .cart{
+      width:250px;
     }
   }
 }
