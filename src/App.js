@@ -11,6 +11,8 @@ import Home from './pages/Home';
 import Cart from './pages/CartPage';
 import Layout from './components/Layout';
 import ScrollToTop from './components/ScrollToTop';
+import Signup from './pages/Signup';
+import ForgotPassword from './pages/ForgotPassword';
 
 function App() {
   return (
@@ -25,7 +27,9 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="cart" element={<Cart />} />
           <Route path="register" element={<Register />} />
+          <Route path="signup" element={<Signup />} />
           <Route path="checkout" element={<Checkout />} />
+          <Route path="forgotPassword" element={<ForgotPassword />} />
         </Route>
       </Routes>
     </div>

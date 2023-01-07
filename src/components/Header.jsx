@@ -102,7 +102,7 @@ const Header = () => {
             <div className="num">{totalQuantity}</div>
           </div>
           <div className="user">
-            <Link to="login">{<AiOutlineUser />}</Link>
+            <Link to="signup">{<AiOutlineUser />}</Link>
           </div>
           <div className="click-menu" onClick={toggleState}>
             {<GiHamburgerMenu />}
