@@ -20,7 +20,7 @@
       button {
         border: none;
         outline: none;
-        padding: 7px 20px;
+        padding: 7px;
         border-radius: 5px;
         cursor: pointer;
         font-weight: 600;
@@ -46,7 +46,7 @@
       .shipping__icon {
         svg {
           border-radius: 50%;
-          padding: .3rem;
+          padding: 0.3rem;
           background: $color-df2020;
           font-size: 1.6rem;
           color: #fff;
@@ -63,8 +63,15 @@
   }
 }
 
-@media (max-width:768px){
-  .hero .hero__content .hero__btns button{
-    padding:7px;
+@media (max-width: 768px) {
+  .hero {
+    .hero__content {
+      .hero__title{
+        font-size: 1.8rem;
+      }
+      .hero__btns button {
+        padding: 7px;
+      }
+    }
   }
-} 
+}

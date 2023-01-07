@@ -8,7 +8,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Checkout from "./pages/Checkout";
 import Home from './pages/Home';
-import Cart from './pages/Cart';
+import Cart from './pages/CartPage';
 import Layout from './components/Layout';
 import ScrollToTop from './components/ScrollToTop';
 

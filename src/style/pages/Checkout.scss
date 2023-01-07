@@ -1,0 +1,47 @@
+@import "../config.scss";
+
+.checkout {
+  padding:3rem 0;
+  .checkout__form{
+    .form__group{
+      input{
+        border:none;
+        width:100%;
+        border-bottom: 1px solid $color-777;
+        padding:1rem 0 ;
+        color:$color-df2020;
+        &:focus{
+          outline: none;
+        }
+      }
+    }
+    .addTOCart__btn{
+      @extend %main-btn;
+      margin:1.5rem 0;
+    }
+  }
+  .checkout__bill {
+    background: #fde4e4;
+    padding: 30px;
+    .checkout__total {
+      border-top: 1px solid #ddd;
+      padding-top: 30px;
+      h5{
+        span{
+          color:#dc3545;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .checkout {
+    .checkout__bill {
+      margin-top: 40px;
+      h6 {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
